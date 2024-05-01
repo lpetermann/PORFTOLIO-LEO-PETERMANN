@@ -1,0 +1,178 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    background-color:rgb(21, 21, 21);
+    color: white;
+font-family: Arial, Helvetica, sans-serif;
+cursor: none;
+max-width: 100vh;
+}
+
+
+header{ 
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    padding: 0 20px;
+    align-items: center;
+    scroll-behavior: smooth;
+    top: 0;
+    position:fixed;
+    width: 100vw;
+    z-index: 10000;
+    transition: transform 0.3s ease-in-out;
+    font-weight: 100;
+    }
+
+    .reseaux {
+        padding-left: 15vw;
+        }
+        .reseaux a {
+            padding-left: 1vw;
+        }
+    
+    .gras {
+        font-weight: 900;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+.lineaire-simple4 {
+    background: linear-gradient(to top,transparent, rgb(14, 14, 14));
+    width: 100vw;
+    height: 20rem;
+    position: fixed;
+    top: 0;
+  }
+
+  .lineaire-simple2 {
+    background: linear-gradient(to top, #141414, transparent);
+    width: 100vw;
+    height: 15rem;
+  }
+
+/*
+hr {
+    justify-content: center;
+    width: 99vw;
+    border: solid 0.1px white;
+}
+*/
+
+h1 {
+    text-align: center;
+    justify-content: center;
+   justify-content: center;
+   color: white;
+   font-weight: 100;
+   font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none ;
+    color: white;
+    cursor: none;
+}
+
+header a:hover {
+    color: red;
+    transition: color 0.3s;
+
+
+}
+
+h1:hover {
+    color: red;
+    transition: color 0.3s;
+}
+
+
+.link {
+    width: 33vw;
+}
+
+.titre {
+    width: 33vw;
+}
+
+.reseau {
+    width: 33vw;
+}
+
+.liste { 
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+.liste div {
+    padding: 0 10px;
+}
+.moi {
+    padding: 30px;
+      justify-content: center;
+      margin: auto;
+        margin-top: 100px;
+    display: flex;
+    width: 100vw;
+    }
+
+.moi .image {
+    width: 25.50%;
+    position: relative;
+}
+
+
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    position: relative;
+    padding-left: 30px;
+}
+
+p {
+    font-weight: 100;
+}
+
+.contact > a {
+    text-decoration: underline;
+}
+
+
+
+.cursor {
+    z-index: 20000;
+    position: fixed;
+background: white;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+
+pointer-events: none;
+transform: translate(-50%, -50%);
+
+mix-blend-mode: difference;
+transition: width 0.3s, height 0.3s;
+display: none;
+}
+
+.cursor.hover {
+    width: 40px;
+    height: 40px;
+    background: red;
+}
+
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+  }
+  

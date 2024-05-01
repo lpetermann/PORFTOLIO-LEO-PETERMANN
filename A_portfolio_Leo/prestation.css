@@ -1,0 +1,164 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    background-color:rgb(21, 21, 21);
+    color: white;
+font-family: Arial, Helvetica, sans-serif;
+cursor: none;
+}
+
+
+header{ 
+display: flex;
+background-color: rgb(10, 10, 10);
+padding: 0 20px;
+align-items: center;
+scroll-behavior: smooth;
+top: 0;
+position:fixed;
+width: 100vw;
+z-index: 10000;
+transition: transform 0.3s ease-in-out;
+font-weight: 100;
+}
+
+.reseaux {
+    padding-left: 15vw;
+    }
+    .reseaux a {
+        padding-left: 1vw;
+    }
+
+.gras {
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+.lineaire-simple4 {
+    background: linear-gradient(to top,transparent, rgb(14, 14, 14));
+    width: 100vw;
+    height: 20rem;
+    position: fixed;
+    top: 0;
+  }
+
+  .lineaire-simple2 {
+    background: linear-gradient(to top, #141414, transparent);
+    width: 100vw;
+    height: 15rem;
+  }
+
+/*
+hr {
+    justify-content: center;
+    width: 99vw;
+    border: solid 0.1px white;
+}
+*/
+
+h1 {
+    text-align: center;
+    justify-content: center;
+   justify-content: center;
+   color: white;
+   font-weight: 100;
+   font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none ;
+    color: white;
+    cursor: none;
+}
+
+header a:hover {
+    color: rgb(255, 230, 0);
+    transition: color 0.3s;
+
+
+}
+
+h1:hover {
+    color: rgb(255, 230, 0);
+    transition: color 0.3s;
+}
+
+
+.link {
+    width: 33vw;
+}
+
+.titre {
+    width: 33vw;
+}
+
+.reseau {
+    width: 33vw;
+}
+
+.liste { 
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+.liste div {
+    padding: 0 10px;
+}
+
+
+
+
+
+.presta {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10vw;
+}
+
+section {
+    padding-top: 10vw;
+}
+
+.img_presta {
+    width: 100%; /* Définir la largeur souhaitée */
+    height: 200px; /* Définir la hauteur souhaitée */
+    overflow: hidden;
+}
+
+.presta > img {
+width: 50%;
+position: relative;
+}
+
+
+
+
+
+.cursor {
+    z-index: 20000;
+    position: fixed;
+background: white;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+
+pointer-events: none;
+transform: translate(-50%, -50%);
+
+mix-blend-mode: difference;
+transition: width 0.3s, height 0.3s;
+display: none;
+}
+
+.cursor.hover {
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 230, 0);
+}

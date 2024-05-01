@@ -1,0 +1,176 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    background-color:black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+transition: opacity 0.5s ease; 
+cursor: none;
+}
+
+
+header{ 
+background-color: black;
+}
+
+header img {
+    z-index: 3000;
+    position: fixed;
+    padding: 100px;
+ width: 5%;
+}
+
+header a :hover {
+ 
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 40vw;
+}
+
+.info_texte {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    color: rgb(138, 138, 138);
+    text-align: end;
+}
+
+.explication {
+    z-index: -1;
+    display: flex;
+justify-content: center;
+height: 100vh;
+width: 100vw;
+position: fixed;
+}
+
+.titre {
+margin-top: 300px;
+text-align: center;
+}
+
+.titre > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(2px);
+    transition: filter 0.3s;
+}
+
+.projet {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.client {
+    color: white;
+    text-align: center;
+text-decoration: none;
+}
+a {
+    color: white;
+    cursor: none;
+}
+
+.dev {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quoi {
+    position: relative;
+    top: 70vh;
+    z-index: 2000;
+    background-color: rgb(24, 24, 24);
+max-width: 100vw;
+justify-content: center;
+padding: 100px;
+}
+
+.youtube_video {
+    margin: auto auto;
+justify-content: center;
+width: 1020px;
+}
+
+.youtube_video>p {
+padding: 20px 0;
+}
+
+.youtube_video_ondara {
+display: flex;
+
+}
+
+.youtube_video_ondara p {
+max-width: 60%;
+}
+
+.vimeo_portrait {
+width: 60%;
+height: 650px;
+}
+
+
+
+.element {
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+body.visible {
+    opacity: 1;
+}
+
+.img_dentiste {
+    display: flex;
+}
+
+.img_dentiste img {
+    max-width: 40vw;
+    margin-right: 40px;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.diptic {
+
+ display: flex;
+ justify-content: space-between;
+margin: auto;
+ padding-bottom: 20px;
+ padding-top: 20px;
+}
+
+
+.cursor {
+    z-index: 20000;
+    position: fixed;
+background: white;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+
+pointer-events: none;
+transform: translate(-50%, -50%);
+
+mix-blend-mode: difference;
+transition: width 0.3s, height 0.3s;
+display: none;
+}
+
+.cursor.hover {
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 230, 0);
+}

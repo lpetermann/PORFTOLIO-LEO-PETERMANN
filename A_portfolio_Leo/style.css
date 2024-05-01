@@ -1,0 +1,226 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    background-color:rgb(21, 21, 21);
+    color: white;
+font-family: Helvetica, sans-serif; 
+cursor: none;
+}
+
+
+header{ 
+display: flex;
+background-color: rgb(10, 10, 10);
+padding: 0 20px;
+align-items: center;
+scroll-behavior: smooth;
+top: 0;
+position:fixed;
+width: 100vw;
+z-index: 10000;
+transition: transform 0.3s ease-in-out;
+}
+
+.reseaux {
+padding-left: 15vw;
+}
+.reseaux a {
+    padding-left: 1vw;
+}
+
+.gras {
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.lineaire-simple4 {
+    background: linear-gradient(to top,transparent, rgb(14, 14, 14));
+    width: 100vw;
+    height: 20rem;
+    position: fixed;
+    top: 0;
+  }
+
+  .lineaire-simple2 {
+    background: linear-gradient(to top, #141414, transparent);
+    width: 100vw;
+    height: 15rem;
+  }
+
+/*
+hr {
+    justify-content: center;
+    width: 99vw;
+    border: solid 0.1px white;
+}
+*/
+
+h1 {
+    text-align: center;
+    justify-content: center;
+   justify-content: center;
+   color: white;
+   font-weight: 100;
+   font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none ;
+    color: white;
+    cursor: none;
+}
+
+header a:hover {
+    color: rgb(255, 230, 0);
+    transition: color 0.3s;
+
+
+}
+
+h1:hover {
+    color: rgb(255, 230, 0);
+    transition: color 0.3s;
+}
+
+
+.link {
+    width: 33vw;
+}
+
+.titre {
+    width: 33vw;
+}
+
+.reseau {
+    width: 33vw;
+}
+
+.liste { 
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+.liste div {
+    padding: 0 10px;
+}
+
+/* INTRO 
+    background-image: url(/images/voyage.JPG); */
+.Intro {
+    height: 50vw;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: 40px;
+}
+
+/* WORK */
+#Work {
+    margin-top: 50vw;
+    width: 100%;
+    background-color: black;
+}
+
+.etage {
+    display: flex;
+}
+
+.aperçu {
+    width: 33.33vw;
+    background-color: black;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+.infos {
+    color: rgba(255, 255, 255, 0);
+    text-align: center;
+   justify-content: center;
+   align-self: center;
+   position: absolute;
+
+}
+
+.aperçu:hover > .infos {
+    z-index: 1000;
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.5s;
+}
+.aperçu:hover > .illustration {
+    filter: blur(10px);
+    transition: filter 0.3s;
+    opacity: 50% ;
+    transition: opacity 0.4s;
+    filter: saturate(0%);
+    transition: saturate 0.3s;
+}
+
+footer {
+    padding: 100px;
+    justify-content: center;
+    text-align: center;
+align-items: center;
+background-color: rgb(10, 10, 10);
+}
+
+.trust {
+    padding: 50px;
+    background-color: rgb(10, 10, 10);
+}
+
+.animated-text {
+    position: relative;
+    display: flex;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    font-size: 24px; /* Ajustez la taille de la police selon vos besoins */
+    color: #333; /* Couleur du texte */
+    animation: moveLeftToRight 10s linear infinite; /* Ajustez la durée de l'animation selon vos besoins */
+  }
+  
+  @keyframes moveLeftToRight {
+    100% {
+      transform: translateX(100%);
+    }
+  0% {
+      transform: translateX(-100%);
+    }
+  }
+  
+.trustIMG {
+margin-left: 50px;
+}
+
+
+
+.cursor {
+    z-index: 20000;
+    position: fixed;
+background: white;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+
+pointer-events: none;
+transform: translate(-50%, -50%);
+
+mix-blend-mode: difference;
+transition: width 0.3s, height 0.3s;
+display: none;
+}
+
+.cursor.hover {
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 230, 0);
+}
